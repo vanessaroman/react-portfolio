@@ -1,12 +1,20 @@
 import React from 'react';
-import './Footer.css';
+import '../styles/App.css';
 
-function Footer() {
-    return (
+const Footer = () => {
+  return (  
+    <div className="footer-container">
       <footer>
-          Bye bitch
+        <ul>
+                <a href="https://github.com/vanessaroman" className="link-info">GiHub</a>
+                <br></br>
+                <a href="https://www.linkedin.com/in/vanessa-r-721224101/" className="link-info">LinkedIn</a>
+                <br></br>
+                <a href="mailto:vanessavirginiarr@gmail.com" className="link-info">Email</a>  
+        </ul>
       </footer>
-    );
-  }
-  
-  export default Footer;
+    </div>   
+  );
+};
+
+export default Footer;

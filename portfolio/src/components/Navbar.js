@@ -6,7 +6,12 @@ function Navbar({ currentPage, handlePageChange }) {
     return (
         <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><h1>Vanessa Roman</h1></a>
+          <a class="navbar-brand" href="#"><NavLink
+            className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+            }
+            to="/Home"
+            > <h1>Vanessa Roman</h1></NavLink></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,6 +35,19 @@ function Navbar({ currentPage, handlePageChange }) {
             }
             to="/portfolio"
             >Portfolio</NavLink>
+            <NavLink
+            className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+            }
+            to="/contact"
+            >Contact</NavLink>
+
+<NavLink
+            className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+            }
+            to="/resume"
+            >Resume</NavLink>
 
             
               {/* <a class="nav-link disabled">Contact</a>
