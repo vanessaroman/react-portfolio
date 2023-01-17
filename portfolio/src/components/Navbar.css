@@ -1,6 +1,20 @@
 *{
-    background-color: #e9c3e1;
+   
     font-family: 'American Typewriter', sans-serif;
-};
+}
+
+.nav-link:hover {
+    background-color: #dcd6f7; 
+    font-size: larger;
+    }
+  
+.navbar { 
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    margin-bottom: 1rem !important;
+}
 
 
+/* #navbarNavAltMarkup{
+    float: right;
+} */

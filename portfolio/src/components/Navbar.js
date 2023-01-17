@@ -4,57 +4,63 @@ import './Navbar.css';
 
 function Navbar({ currentPage, handlePageChange }) {
     return (
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light" >
+
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><NavLink
             className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
             }
             to="/Home"
-            > <h1>Vanessa Roman</h1></NavLink></a>
+            > <h1 style={{color:'lavenderblush'}}>VRoman.</h1></NavLink></a>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
             <div class="navbar-nav">
             <NavLink
             className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
             }
-            to="/Home"
-            > Home</NavLink>
+            to="/Home" style={{color:'lavenderblush'}}
+            > home</NavLink>
               <NavLink
             className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
             }
             to="/about"
-            >About me</NavLink>
+            style={{color:'lavenderblush'}}>about</NavLink>
              <NavLink
             className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
             }
             to="/portfolio"
-            >Portfolio</NavLink>
+            style={{color:'lavenderblush'}}>portfolio</NavLink>
             <NavLink
             className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
             }
             to="/contact"
-            >Contact</NavLink>
+            style={{color:'lavenderblush'}}>contact</NavLink>
 
 <NavLink
             className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
             }
             to="/resume"
-            >Resume</NavLink>
+            style={{color:'lavenderblush'}}>resume</NavLink>
 
             
               {/* <a class="nav-link disabled">Contact</a>
               <a class="nav-link disabled">Resume</a> */}
             </div>
+
           </div>
         </div>
+
       </nav>
     );
   }
