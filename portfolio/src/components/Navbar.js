@@ -4,7 +4,7 @@ import './Navbar.css';
 
 function Navbar({ currentPage, handlePageChange }) {
     return (
-        <nav class="navbar navbar-expand-lg bg-light" >
+        <nav class="navbar navbar-expand-lg bg-light" style={{border: 10}} >
 
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><NavLink
@@ -12,7 +12,7 @@ function Navbar({ currentPage, handlePageChange }) {
                 isActive ? "nav-link active" : "nav-link"
             }
             to="/Home"
-            > <h1 style={{color:'lavenderblush'}}>VRoman.</h1></NavLink></a>
+            > <h1 style={{color:'lavenderblush', fontSize: 30, letterSpacing: 3}}>VRoman.</h1></NavLink></a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
