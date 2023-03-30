@@ -6,11 +6,11 @@ const Footer = () => {
     <div className="footer-container">
       <footer>
         <ul>
-                <a href="https://github.com/vanessaroman" className="link-info">GiHub</a>
-                <br></br>
-                <a href="https://www.linkedin.com/in/vanessa-r-721224101/" className="link-info">LinkedIn</a>
-                <br></br>
-                <a href="mailto:vanessavirginiarr@gmail.com" className="link-info">Email</a>  
+               <li>  <a href="https://github.com/vanessaroman" className="link-info">GitHub</a> </li>
+                
+                <li> <a href="https://www.linkedin.com/in/vanessa-r-721224101/" className="link-info">LinkedIn</a> </li>
+                
+                <li> <a href="mailto:vanessavirginiarr@gmail.com" className="link-info">Email</a>  </li>
         </ul>
       </footer>
     </div>   

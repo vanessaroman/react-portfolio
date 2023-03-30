@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 
@@ -12,5 +14,25 @@ img {
  }
 
  footer {
-    align-items: center;
+    text-align: center;
+    padding-top: 30px;
  }
+
+ li {
+     display: inline-flex;
+     margin-right: 50px;
+     
+ }
+
+
+a:link {
+    color: #DC758F;
+    text-decoration: none;
+    
+}
+
+a:visited {
+    color: #DC758F;
+    text-decoration: none;
+    
+}
